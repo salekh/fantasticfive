@@ -20,6 +20,9 @@ html, body {
     margin:1vmin;
     overflow:hidden;
     position:relative;
+    // custom
+    background-size: cover;
+    flex-basis: 400px;
   }
   
   .text {
@@ -79,7 +82,7 @@ html, body {
     width:0;
   }
   
-  .panel:nth-child(1) {
+/*   .panel:nth-child(1) {
     flex-basis: 400px;
   }
   .panel:nth-child(2) {
@@ -105,11 +108,11 @@ html, body {
   }
   .panel:nth-child(9) {
     flex-basis: 200px;
-  }
+  } */
   
   /* background colours */
   
-  .panel:nth-child(4n+1) {
+/*   .panel:nth-child(4n+1) {
     background-image:radial-gradient(circle, yellow, orange);
   }
   
@@ -123,4 +126,28 @@ html, body {
   
   .panel:nth-child(4n+4) {
     background-image:radial-gradient(circle, lightcoral, tomato);
+  } */
+
+  .rachel {
+    background-image: url(rachel.png);
+  }
+  
+  .chandler {
+    background-image: url(chandler.png);
+  }
+  
+  .ross {
+    background-image: url(ross.jpg);
+  }
+  
+  .monica {
+    background-image: url(monica.png);
+  }
+  
+  .joey {
+    background-image: url(joey.jpg);
+  }
+
+  .phoebe {
+    background-image: url(phoebe.png);
   }
