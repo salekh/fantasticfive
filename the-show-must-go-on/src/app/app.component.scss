@@ -1,5 +1,5 @@
 .title {
-  font-family: 'Modak', cursive;
+  font-family: "Modak", cursive;
   color: white;
   font-size: 48px;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -22,7 +22,7 @@
   font-size: 18px;
 }
 
-.upload-btn-wrapper input[type=file] {
+.upload-btn-wrapper input[type="file"] {
   font-size: 100px;
   position: absolute;
   left: 0;
@@ -31,102 +31,102 @@
 }
 
 /* COMIC STRIP */
-  
-  .comic {
-    display:flex;
-    flex-wrap:wrap;
-    font-family:'Comic Sans', cursive;
-    padding:1vmin;
-  }
-  
-  .panel {
-    background-color:#fff;
-    border:solid 2px #000;
-    box-shadow:0 6px 6px -6px #000;
-    display:inline-block;
-    flex:1 1;
-    height:300px;
-    margin:1vmin;
-    overflow:hidden;
-    position:relative;
-    // custom
-    background-size: cover;
-    flex-basis: 300px;
-  }
 
-  .boxWidth1{
-    flex-basis: 300px;
-  }
+.comic {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Comic Sans", cursive;
+  padding: 1vmin;
+}
 
-  .boxWidth2{
-    flex-basis: 400px;
-  }
+.panel {
+  background-color: #fff;
+  border: solid 2px #000;
+  box-shadow: 0 6px 6px -6px #000;
+  display: inline-block;
+  flex: 1 1;
+  height: 300px;
+  margin: 1vmin;
+  overflow: hidden;
+  position: relative;
+  // custom
+  background-size: cover;
+  flex-basis: 300px;
+}
 
-  .boxWidth3{
-    flex-basis: 500px;
-  }
+.boxWidth1 {
+  flex-basis: 300px;
+}
 
-  .boxWidth4{
-    flex-basis: 450px;
-  }
-  
-  .text {
-    background-color:#fff;
-    border:solid 2px #000;
-    margin:0;
-    padding:3px 10px;
-  }
-  
-  .top-left {
-    left:-6px;
-    position:absolute;
-    top:-2px;
-    transform:skew(-15deg);
-  }
-  
-  .bottom-right {
-    bottom:-2px;
-    position:absolute;
-    right:-6px;
-    transform:skew(-15deg);
-  }
-  
-  .speech {
-    background-color:#fff;
-    border:solid 2px #000;
-    border-radius:12px;
-    display:inline-block;
-    margin:.5em;
-    padding:.5em 1em;
-    position:relative;
-  }
-  
-  .speech:before {
-    border:solid 12px transparent;
-    border-left:solid 12px #000;
-    border-top:solid 12px #000;
-    bottom:-24px;
-    content:"";
-    height:0;
-    left:27px;
-    position:absolute;
-    transform:skew(50deg);
-    width:0;
-  }
-  
-  .speech:after {
-    border:solid 10px transparent;
-    border-left:solid 10px #fff;
-    border-top:solid 10px #fff;
-    bottom:-19px;
-    content:"";
-    height:0;
-    left:27px;
-    position:absolute;
-    transform:skew(50deg);
-    width:0;
-  }
-  
+.boxWidth2 {
+  flex-basis: 400px;
+}
+
+.boxWidth3 {
+  flex-basis: 500px;
+}
+
+.boxWidth4 {
+  flex-basis: 450px;
+}
+
+.text {
+  background-color: #fff;
+  border: solid 2px #000;
+  margin: 0;
+  padding: 3px 10px;
+}
+
+.top-left {
+  left: -6px;
+  position: absolute;
+  top: -2px;
+  transform: skew(-15deg);
+}
+
+.bottom-right {
+  bottom: -2px;
+  position: absolute;
+  right: -6px;
+  transform: skew(-15deg);
+}
+
+.speech {
+  background-color: #fff;
+  border: solid 2px #000;
+  border-radius: 12px;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  position: relative;
+}
+
+.speech:before {
+  border: solid 12px transparent;
+  border-left: solid 12px #000;
+  border-top: solid 12px #000;
+  bottom: -24px;
+  content: "";
+  height: 0;
+  left: 27px;
+  position: absolute;
+  transform: skew(50deg);
+  width: 0;
+}
+
+.speech:after {
+  border: solid 10px transparent;
+  border-left: solid 10px #fff;
+  border-top: solid 10px #fff;
+  bottom: -19px;
+  content: "";
+  height: 0;
+  left: 27px;
+  position: absolute;
+  transform: skew(50deg);
+  width: 0;
+}
+
 /*   .panel:nth-child(1) {
     flex-basis: 400px;
   }
@@ -154,9 +154,9 @@
   .panel:nth-child(9) {
     flex-basis: 500px;
   } */
-  
-  /* background colours */
-  
+
+/* background colours */
+
 /*   .panel:nth-child(4n+1) {
     background-image:radial-gradient(circle, yellow, orange);
   }
@@ -175,98 +175,102 @@
 
 /* PICTURES BACKGROUNDS */
 
-  .rachel1 {
-    background-image: url(pictures/rachel1.png);
-  }
-  .rachel2 {
-    background-image: url(pictures/rachel2.png);
-  }
-  .rachel3 {
-    background-image: url(pictures/rachel3.png);
-  }
-  .rachel4 {
-    background-image: url(pictures/rachel4.png);
-  }
-  .rachel5 {
-    background-image: url(pictures/rachel5.png);
-  }
-  
-  .chandler1 {
-    background-image: url(pictures/chandler1.png);
-  }
-  .chandler2 {
-    background-image: url(pictures/chandler2.png);
-  }
-  .chandler3 {
-    background-image: url(pictures/chandler3.png);
-  }
-  .chandler4 {
-    background-image: url(pictures/chandler4.png);
-  }
-  .chandler5 {
-    background-image: url(pictures/chandler5.png);
-  }
-  
-  .ross1 {
-    background-image: url(pictures/ross1.png);
-  }
-  .ross2 {
-    background-image: url(pictures/ross2.png);
-  }
-  .ross3 {
-    background-image: url(pictures/ross3.png);
-  }
-  .ross4 {
-    background-image: url(pictures/ross4.png);
-  }
-  .ross5 {
-    background-image: url(pictures/ross5.png);
-  }
-  
-  .monica1 {
-    background-image: url(pictures/monica1.png);
-  }
-  .monica2 {
-    background-image: url(pictures/monica2.png);
-  }
-  .monica3 {
-    background-image: url(pictures/monica3.png);
-  }
-  .monica4 {
-    background-image: url(pictures/monica4.png);
-  }
-  .monica5 {
-    background-image: url(pictures/monica5.png);
-  }
-  
-  .joey1 {
-    background-image: url(pictures/joey1.png);
-  }
-  .joey2 {
-    background-image: url(pictures/joey2.png);
-  }
-  .joey3 {
-    background-image: url(pictures/joey3.png);
-  }
-  .joey4 {
-    background-image: url(pictures/joey4.png);
-  }
-  .joey5 {
-    background-image: url(pictures/joey5.png);
-  }
+.friends {
+  background-image: url(pictures/friends.jpg);
+}
 
-  .phoebe1 {
-    background-image: url(pictures/phoebe1.png);
-  }
-  .phoebe2 {
-    background-image: url(pictures/phoebe2.png);
-  }
-  .phoebe3 {
-    background-image: url(pictures/phoebe3.png);
-  }
-  .phoebe4 {
-    background-image: url(pictures/phoebe4.png);
-  }
-  .phoebe5 {
-    background-image: url(pictures/phoebe5.png);
-  }
+.rachel1 {
+  background-image: url(pictures/rachel1.png);
+}
+.rachel2 {
+  background-image: url(pictures/rachel2.png);
+}
+.rachel3 {
+  background-image: url(pictures/rachel3.png);
+}
+.rachel4 {
+  background-image: url(pictures/rachel4.png);
+}
+.rachel5 {
+  background-image: url(pictures/rachel5.png);
+}
+
+.chandler1 {
+  background-image: url(pictures/chandler1.png);
+}
+.chandler2 {
+  background-image: url(pictures/chandler2.png);
+}
+.chandler3 {
+  background-image: url(pictures/chandler3.png);
+}
+.chandler4 {
+  background-image: url(pictures/chandler4.png);
+}
+.chandler5 {
+  background-image: url(pictures/chandler5.png);
+}
+
+.ross1 {
+  background-image: url(pictures/ross1.png);
+}
+.ross2 {
+  background-image: url(pictures/ross2.png);
+}
+.ross3 {
+  background-image: url(pictures/ross3.png);
+}
+.ross4 {
+  background-image: url(pictures/ross4.png);
+}
+.ross5 {
+  background-image: url(pictures/ross5.png);
+}
+
+.monica1 {
+  background-image: url(pictures/monica1.png);
+}
+.monica2 {
+  background-image: url(pictures/monica2.png);
+}
+.monica3 {
+  background-image: url(pictures/monica3.png);
+}
+.monica4 {
+  background-image: url(pictures/monica4.png);
+}
+.monica5 {
+  background-image: url(pictures/monica5.png);
+}
+
+.joey1 {
+  background-image: url(pictures/joey1.png);
+}
+.joey2 {
+  background-image: url(pictures/joey2.png);
+}
+.joey3 {
+  background-image: url(pictures/joey3.png);
+}
+.joey4 {
+  background-image: url(pictures/joey4.png);
+}
+.joey5 {
+  background-image: url(pictures/joey5.png);
+}
+
+.phoebe1 {
+  background-image: url(pictures/phoebe1.png);
+}
+.phoebe2 {
+  background-image: url(pictures/phoebe2.png);
+}
+.phoebe3 {
+  background-image: url(pictures/phoebe3.png);
+}
+.phoebe4 {
+  background-image: url(pictures/phoebe4.png);
+}
+.phoebe5 {
+  background-image: url(pictures/phoebe5.png);
+}

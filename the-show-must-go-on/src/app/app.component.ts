@@ -26,22 +26,26 @@ export class AppComponent {
         if (transcriptText.length == 2) {
           let transcript = new Transcript();
           transcript.actor = transcriptText[0].toLowerCase();
-          if(transcriptText[1].includes("(") && transcriptText[1].includes(")")){
+          if (transcriptText[1].includes("(") && transcriptText[1].includes(")")) {
             transcript.description = transcriptText[1].match(/\(([^)]+)\)/)[1];
           } else {
-            transcript.description='';
+            transcript.description = '';
           }
-          transcript.sentence = transcriptText[1].replace('('+transcript.description+")",'');
+          transcript.sentence = transcriptText[1].replace('(' + transcript.description + ")", '');
           if (!transcript.sentence.replace(/\s/g, '').length) {
-            transcript.sentence='';
+            transcript.sentence = '';
           }
           //randomization character picture number
-          let min=1; 
-          let max=6;
+          let min = 1;
+          let max = 6;
           transcript.pictureNumber = Math.floor(Math.random() * (+max - +min)) + +min;
           this.transcripts.push(transcript);
         } else {
-          console.log("FORMAT COPYCAT ERROR! LENGTH: " + transcriptText.length);
+          let transcript = new Transcript();
+          transcript.actor = '';
+          transcript.description = '';
+          transcript.sentence = copycatRow;
+          this.transcripts.push(transcript);
         }
       }
     }

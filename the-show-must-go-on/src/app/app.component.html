@@ -1,21 +1,24 @@
-  <!-- <h1>The Show Must Go On</h1> -->
-  <div class="title">The Show Must Go On!</div>
-  <div class="upload-btn-wrapper">
-    <button class="btn">I want my favorite TV series to last forever!</button>
-    <input type="file" name="myfile" (change)="fileChanged($event)"/>
-  </div>
+<!-- <h1>The Show Must Go On</h1> -->
+<div class="title">The Show Must Go On!</div>
+<div class="upload-btn-wrapper">
+  <button class="btn">I want my favorite TV series to last forever!</button>
+  <input type="file" name="myfile" (change)="fileChanged($event)" />
+</div>
 
 
-  <article class="comic">
-    <ng-container *ngFor="let transcript of transcripts">
-      <div class="panel {{transcript.actor}}{{transcript.pictureNumber}}">
-        <p *ngIf="transcript.sentence!=''" class="speech">{{transcript.sentence}}</p>
-        <p *ngIf="transcript.description!=''" class="text bottom-right">{{transcript.description}}</p>
-      </div>
-    </ng-container>
-  </article>
+<article class="comic">
+  <ng-container *ngFor="let transcript of transcripts">
+    <div *ngIf="transcript.actor!=''" class="panel {{transcript.actor}}{{transcript.pictureNumber}}">
+      <p *ngIf="transcript.sentence!=''" class="speech">{{transcript.sentence}}</p>
+      <p *ngIf="transcript.description!=''" class="text bottom-right">{{transcript.description}}</p>
+    </div>
+    <div *ngIf="transcript.actor==''" class="panel friends">
+      <p class="text top-left">{{transcript.sentence}}</p>
+    </div>
+  </ng-container>
+</article>
 
-  <!-- <article class="comic">
+<!-- <article class="comic">
   <div class="panel rachel">
     <p class="text top-left">Suddenly...</p>
     <p class="text bottom-right">...something amazing happened</p>
@@ -37,4 +40,4 @@
   </div>
 </article> -->
 
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
