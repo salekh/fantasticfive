@@ -1,7 +1,36 @@
-html, body {
-    margin:0;
-    padding:0;
-  }
+.title {
+  font-family: 'Modak', cursive;
+  color: white;
+  font-size: 48px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* UPLOAD BUTTON */
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 6px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+/* COMIC STRIP */
   
   .comic {
     display:flex;
@@ -16,13 +45,29 @@ html, body {
     box-shadow:0 6px 6px -6px #000;
     display:inline-block;
     flex:1 1;
-    height:200px;
+    height:300px;
     margin:1vmin;
     overflow:hidden;
     position:relative;
     // custom
     background-size: cover;
     flex-basis: 300px;
+  }
+
+  .boxWidth1{
+    flex-basis: 300px;
+  }
+
+  .boxWidth2{
+    flex-basis: 400px;
+  }
+
+  .boxWidth3{
+    flex-basis: 500px;
+  }
+
+  .boxWidth4{
+    flex-basis: 450px;
   }
   
   .text {
@@ -63,7 +108,7 @@ html, body {
     bottom:-24px;
     content:"";
     height:0;
-    left:24px;
+    left:27px;
     position:absolute;
     transform:skew(50deg);
     width:0;
@@ -86,28 +131,28 @@ html, body {
     flex-basis: 400px;
   }
   .panel:nth-child(2) {
-    flex-basis: 200px;
+    flex-basis: 500px;
   }
   .panel:nth-child(3) {
-    flex-basis: 200px;
+    flex-basis: 300px;
   }
   .panel:nth-child(4) {
-    flex-basis: 200px;
+    flex-basis: 500px;
   }
   .panel:nth-child(5) {
-    flex-basis: 200px;
+    flex-basis: 300px;
   }
   .panel:nth-child(6) {
-    flex-basis: 200px;
+    flex-basis: 500px;
   }
   .panel:nth-child(7) {
-    flex-basis: 400px;
+    flex-basis: 300px;
   }
   .panel:nth-child(8) {
-    flex-basis: 200px;
+    flex-basis: 400px;
   }
   .panel:nth-child(9) {
-    flex-basis: 200px;
+    flex-basis: 500px;
   } */
   
   /* background colours */
@@ -128,26 +173,100 @@ html, body {
     background-image:radial-gradient(circle, lightcoral, tomato);
   } */
 
-  .rachel {
-    background-image: url(rachel.png);
+/* PICTURES BACKGROUNDS */
+
+  .rachel1 {
+    background-image: url(pictures/rachel1.png);
+  }
+  .rachel2 {
+    background-image: url(pictures/rachel2.png);
+  }
+  .rachel3 {
+    background-image: url(pictures/rachel3.png);
+  }
+  .rachel4 {
+    background-image: url(pictures/rachel4.png);
+  }
+  .rachel5 {
+    background-image: url(pictures/rachel5.png);
   }
   
-  .chandler {
-    background-image: url(chandler.png);
+  .chandler1 {
+    background-image: url(pictures/chandler1.png);
+  }
+  .chandler2 {
+    background-image: url(pictures/chandler2.png);
+  }
+  .chandler3 {
+    background-image: url(pictures/chandler3.png);
+  }
+  .chandler4 {
+    background-image: url(pictures/chandler4.png);
+  }
+  .chandler5 {
+    background-image: url(pictures/chandler5.png);
   }
   
-  .ross {
-    background-image: url(ross.jpg);
+  .ross1 {
+    background-image: url(pictures/ross1.png);
+  }
+  .ross2 {
+    background-image: url(pictures/ross2.png);
+  }
+  .ross3 {
+    background-image: url(pictures/ross3.png);
+  }
+  .ross4 {
+    background-image: url(pictures/ross4.png);
+  }
+  .ross5 {
+    background-image: url(pictures/ross5.png);
   }
   
-  .monica {
-    background-image: url(monica.png);
+  .monica1 {
+    background-image: url(pictures/monica1.png);
+  }
+  .monica2 {
+    background-image: url(pictures/monica2.png);
+  }
+  .monica3 {
+    background-image: url(pictures/monica3.png);
+  }
+  .monica4 {
+    background-image: url(pictures/monica4.png);
+  }
+  .monica5 {
+    background-image: url(pictures/monica5.png);
   }
   
-  .joey {
-    background-image: url(joey.jpg);
+  .joey1 {
+    background-image: url(pictures/joey1.png);
+  }
+  .joey2 {
+    background-image: url(pictures/joey2.png);
+  }
+  .joey3 {
+    background-image: url(pictures/joey3.png);
+  }
+  .joey4 {
+    background-image: url(pictures/joey4.png);
+  }
+  .joey5 {
+    background-image: url(pictures/joey5.png);
   }
 
-  .phoebe {
-    background-image: url(phoebe.png);
+  .phoebe1 {
+    background-image: url(pictures/phoebe1.png);
+  }
+  .phoebe2 {
+    background-image: url(pictures/phoebe2.png);
+  }
+  .phoebe3 {
+    background-image: url(pictures/phoebe3.png);
+  }
+  .phoebe4 {
+    background-image: url(pictures/phoebe4.png);
+  }
+  .phoebe5 {
+    background-image: url(pictures/phoebe5.png);
   }

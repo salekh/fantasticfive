@@ -26,7 +26,19 @@ export class AppComponent {
         if (transcriptText.length == 2) {
           let transcript = new Transcript();
           transcript.actor = transcriptText[0].toLowerCase();
-          transcript.sentence = transcriptText[1];
+          if(transcriptText[1].includes("(") && transcriptText[1].includes(")")){
+            transcript.description = transcriptText[1].match(/\(([^)]+)\)/)[1];
+          } else {
+            transcript.description='';
+          }
+          transcript.sentence = transcriptText[1].replace('('+transcript.description+")",'');
+          if (!transcript.sentence.replace(/\s/g, '').length) {
+            transcript.sentence='';
+          }
+          //randomization character picture number
+          let min=1; 
+          let max=6;
+          transcript.pictureNumber = Math.floor(Math.random() * (+max - +min)) + +min;
           this.transcripts.push(transcript);
         } else {
           console.log("FORMAT COPYCAT ERROR! LENGTH: " + transcriptText.length);
