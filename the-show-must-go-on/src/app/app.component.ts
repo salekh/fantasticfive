@@ -22,30 +22,38 @@ export class AppComponent {
       let copycat = <string>fileReader.result;
       let copycatRows = copycat.split("\n");
       for (let copycatRow of copycatRows) {
-        let transcriptText: string[] = copycatRow.split(": ");
-        if (transcriptText.length == 2) {
-          let transcript = new Transcript();
-          transcript.actor = transcriptText[0].toLowerCase();
-          if (transcriptText[1].includes("(") && transcriptText[1].includes(")")) {
-            transcript.description = transcriptText[1].match(/\(([^)]+)\)/)[1];
+        if (copycatRow && !(!copycatRow.replace(/\s/g, '').length)) {
+          let transcriptText: string[] = copycatRow.split(": ");
+          if (transcriptText.length == 2) {
+            let transcript = new Transcript();
+            transcript.actor = transcriptText[0].toLowerCase();
+            if (transcriptText[1].includes("(") && transcriptText[1].includes(")")) {
+              transcript.description = transcriptText[1].match(/\(([^)]+)\)/)[1];
+            } else {
+              transcript.description = '';
+            }
+            transcript.sentence = transcriptText[1].replace('(' + transcript.description + ")", '');
+            if (!transcript.sentence.replace(/\s/g, '').length) {
+              transcript.sentence = '';
+            }
+            //randomization character picture number
+            let minPicture = 1;
+            let maxPicture = 6;
+            transcript.pictureNumber = Math.floor(Math.random() * (+maxPicture - +minPicture)) + +minPicture;
+
+            //randomization character picture number
+            let minWidth = 1;
+            let maxWidth = 7;
+            transcript.comicBoxWidth = Math.floor(Math.random() * (+maxWidth - +minWidth)) + +minWidth;
+
+            this.transcripts.push(transcript);
           } else {
+            let transcript = new Transcript();
+            transcript.actor = '';
             transcript.description = '';
+            transcript.sentence = copycatRow;
+            this.transcripts.push(transcript);
           }
-          transcript.sentence = transcriptText[1].replace('(' + transcript.description + ")", '');
-          if (!transcript.sentence.replace(/\s/g, '').length) {
-            transcript.sentence = '';
-          }
-          //randomization character picture number
-          let min = 1;
-          let max = 6;
-          transcript.pictureNumber = Math.floor(Math.random() * (+max - +min)) + +min;
-          this.transcripts.push(transcript);
-        } else {
-          let transcript = new Transcript();
-          transcript.actor = '';
-          transcript.description = '';
-          transcript.sentence = copycatRow;
-          this.transcripts.push(transcript);
         }
       }
     }

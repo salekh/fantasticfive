@@ -49,9 +49,9 @@
   margin: 1vmin;
   overflow: hidden;
   position: relative;
+  flex-basis: 300px;
   // custom
   background-size: cover;
-  flex-basis: 300px;
 }
 
 .boxWidth1 {
@@ -59,15 +59,23 @@
 }
 
 .boxWidth2 {
-  flex-basis: 400px;
+  flex-basis: 350px;
 }
 
 .boxWidth3 {
-  flex-basis: 500px;
+  flex-basis: 400px;
 }
 
 .boxWidth4 {
   flex-basis: 450px;
+}
+
+.boxWidth5 {
+  flex-basis: 500px;
+}
+
+.boxWidth6 {
+  flex-basis: 550px;
 }
 
 .text {
@@ -127,56 +135,13 @@
   width: 0;
 }
 
-/*   .panel:nth-child(1) {
-    flex-basis: 400px;
-  }
-  .panel:nth-child(2) {
-    flex-basis: 500px;
-  }
-  .panel:nth-child(3) {
-    flex-basis: 300px;
-  }
-  .panel:nth-child(4) {
-    flex-basis: 500px;
-  }
-  .panel:nth-child(5) {
-    flex-basis: 300px;
-  }
-  .panel:nth-child(6) {
-    flex-basis: 500px;
-  }
-  .panel:nth-child(7) {
-    flex-basis: 300px;
-  }
-  .panel:nth-child(8) {
-    flex-basis: 400px;
-  }
-  .panel:nth-child(9) {
-    flex-basis: 500px;
-  } */
-
-/* background colours */
-
-/*   .panel:nth-child(4n+1) {
-    background-image:radial-gradient(circle, yellow, orange);
-  }
-  
-  .panel:nth-child(4n+2) {
-    background-image:radial-gradient(circle, lightblue, deepskyblue);
-  }
-  
-  .panel:nth-child(4n+3) {
-    background-image:radial-gradient(circle, palegreen, yellowgreen);
-  }
-  
-  .panel:nth-child(4n+4) {
-    background-image:radial-gradient(circle, lightcoral, tomato);
-  } */
-
 /* PICTURES BACKGROUNDS */
 
 .friends {
   background-image: url(pictures/friends.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .rachel1 {

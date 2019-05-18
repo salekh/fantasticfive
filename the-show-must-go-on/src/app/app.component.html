@@ -8,7 +8,7 @@
 
 <article class="comic">
   <ng-container *ngFor="let transcript of transcripts">
-    <div *ngIf="transcript.actor!=''" class="panel {{transcript.actor}}{{transcript.pictureNumber}}">
+    <div *ngIf="transcript.actor!=''" class="panel boxWidth{{transcript.comicBoxWidth}}  {{transcript.actor}}{{transcript.pictureNumber}}">
       <p *ngIf="transcript.sentence!=''" class="speech">{{transcript.sentence}}</p>
       <p *ngIf="transcript.description!=''" class="text bottom-right">{{transcript.description}}</p>
     </div>
@@ -17,27 +17,5 @@
     </div>
   </ng-container>
 </article>
-
-<!-- <article class="comic">
-  <div class="panel rachel">
-    <p class="text top-left">Suddenly...</p>
-    <p class="text bottom-right">...something amazing happened</p>
-  </div>
-  <div class="panel phoebe">
-    <p class="text top-left">Try resizing...</p>
-    <p class="text bottom-right">...it's responsive</p>
-  </div>
-  <div class="panel ross">
-    <p class="speech">A speech bubble</p>
-  </div>
-  <div class="panel chandler"></div>
-  <div class="panel joey"></div>
-  <div class="panel monica"></div>
-  <div class="panel"></div>
-  <div class="panel"></div>
-  <div class="panel">
-    <p class="text bottom-right">THE END</p>
-  </div>
-</article> -->
 
 <router-outlet></router-outlet>
