@@ -22,7 +22,7 @@ html, body {
     position:relative;
     // custom
     background-size: cover;
-    flex-basis: 400px;
+    flex-basis: 300px;
   }
   
   .text {
@@ -65,7 +65,7 @@ html, body {
     height:0;
     left:24px;
     position:absolute;
-    transform:skew(-15deg);
+    transform:skew(50deg);
     width:0;
   }
   
@@ -78,7 +78,7 @@ html, body {
     height:0;
     left:27px;
     position:absolute;
-    transform:skew(-15deg);
+    transform:skew(50deg);
     width:0;
   }
   

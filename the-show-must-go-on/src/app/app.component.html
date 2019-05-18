@@ -2,11 +2,15 @@
   <input type='file' (change)="fileChanged($event)">
 </div>
 
-<div *ngFor="let sentence of sentences">
-  {{sentence}}
-</div>
-
 <article class="comic">
+  <ng-container *ngFor="let transcript of transcripts">
+      <div class="panel {{transcript.actor}}" >
+          <p class="speech">{{transcript.sentence}}</p>
+      </div>
+  </ng-container>
+</article>
+
+<!-- <article class="comic">
   <div class="panel rachel">
     <p class="text top-left">Suddenly...</p>
     <p class="text bottom-right">...something amazing happened</p>
@@ -26,6 +30,6 @@
   <div class="panel">
     <p class="text bottom-right">THE END</p>
   </div>
-</article>
+</article> -->
 
 <router-outlet></router-outlet>
